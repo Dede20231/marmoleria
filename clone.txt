@@ -1,0 +1,29 @@
+# only 1st time
+git clone https://github.com/Dede20231/LATAM.git
+cd LATAM
+
+# every time
+mkdir DEST_REPO
+cd DEST_REPO
+git init
+
+cp -r ../LATAM/* .
+git status
+git add .
+git commit -m "Initial commit - imported source LATAM"
+git remote add origin https://github.com/Dede20231/DEST_REPO.git
+git remote -v
+
+git branch -M main
+git push -u origin main
+
+
+#####################
+⚠️ Common issues
+❌ “refusing to merge unrelated histories”
+
+Fix:
+
+git pull origin main --allow-unrelated-histories
+❌ remote already exists
+git remote remove origin

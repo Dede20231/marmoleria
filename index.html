@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Energy Audit</title>
+
+<link rel="stylesheet" href="index.css">
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+</head>
+
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="header-actions">
+
+      <img src="LogoIreland.png" alt="Logo Company" style="height:50px;">
+
+      <h1 class="h1-3d-zoom">
+        DIGITAL ENERGY AUDIT LIMITED
+      </h1>
+
+      <div class="lang-switcher">
+        <select id="language-select">
+          <option value="en">🇬🇧 English</option>
+          <option value="es">🇪🇸 Español</option>
+        </select>
+      </div>
+
+      <nav>
+        <button
+          class="tab-link active"
+          data-tab="services"
+          data-key="menuHome">
+          Home
+        </button>
+
+        <button
+          class="tab-link"
+          data-tab="about"
+          data-key="menuAbout">
+          About Us
+        </button>
+
+        <button
+          class="tab-link"
+          data-tab="contact"
+          data-key="menuContact">
+          Contact
+        </button>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+<!-- HOME -->
+
+<section id="services" class="active encart">
+
+  <h2 data-key="ourCompany">
+    🏢 Our Company
+  </h2>
+
+  <div class="carousel">
+
+    <button class="prev">&#10094;</button>
+
+    <div class="carousel-track">
+
+      <div class="carousel-item">
+        <img src="images/company1.jpg" alt="Company Image 1">
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/company2.jpg" alt="Company Image 2">
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/company3.jpg" alt="Company Image 3">
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/company4.jpg" alt="Company Image 4">
+      </div>
+
+    </div>
+
+    <button class="next">&#10095;</button>
+
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="encart">
+
+  <h2 data-key="aboutTitle">
+    Who We Are
+  </h2>
+
+  <p data-key="aboutText">
+    We are a company specialized ...
+  </p>
+
+  <h3 data-key="teamTitle">
+    Our Team
+  </h3>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="encart contact-section">
+
+  <div class="contact-card">
+    <h2>DIGITAL ENERGY AUDIT LIMITED HEADQUARTERS</h2>
+    <p>6 Fern Road, Sandyford Business Park, Dublin, Ireland</p>
+    <p>Email: info@digitalenergyaudit.com</p>
+  </div>
+
+</section>
+
+<!-- COOKIE BANNER (if used) -->
+
+<div id="cookie-banner" style="display:none;">
+
+  <span data-key="msgLegal">
+    This website uses necessary cookies and, with your consent, analytics cookies.
+  </span>
+
+  <button data-key="allOK">
+    Accept all
+  </button>
+
+  <button data-key="allNOK">
+    Reject all
+  </button>
+
+  <a href="#" data-key="moreInfo">
+    View details
+  </a>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+  © 2025 DIGITAL ENERGY AUDIT LIMITED —
+  <span data-key="rights">
+    All rights reserved.
+  </span>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
