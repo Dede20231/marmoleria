@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       widget: "We offer a web widget that allows you to visualize real-time consumption.",
 
       aboutTitle: "Who We Are",
-      aboutText: "We are a company specialized in measuring and optimizing electrical energy consumption.",
+      aboutText: "We are a company specialized ...",
 
       teamTitle: "Our Team",
 
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       widget: "Ofrecemos un widget web que muestra el consumo en tiempo real.",
 
       aboutTitle: "Quiénes somos",
-      aboutText: "Estamos especializados en medición y optimización del consumo eléctrico.",
+      aboutText: "Estamos especializados en ...",
 
       teamTitle: "Nuestro Equipo",
 
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
       widget: "Oferecemos um widget web que permite visualizar o consumo em tempo real.",
 
       aboutTitle: "Quem somos",
-      aboutText: "Somos uma empresa especializada em medição e otimização do consumo de energia elétrica.",
+      aboutText: "Somos uma empresa especializada em ...",
 
       teamTitle: "Nossa Equipe",
 
