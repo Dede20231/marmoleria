@@ -1,9 +1,8 @@
-/* script.js - simplified i18n + tabs + carousel */
 document.addEventListener("DOMContentLoaded", () => {
   const DEBUG = false;
 
   /* -------------------------
-     TRANSLATIONS (EN / ES ONLY)
+     TRANSLATIONS (EN / ES / PT)
      ------------------------- */
   const translations = {
     en: {
@@ -17,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       aboutTitle: "Who We Are",
       aboutText: "We are a company specialized in measuring and optimizing electrical energy consumption.",
 
-      teamTitle: "Our Team",    
+      teamTitle: "Our Team",
 
       address: "Address",
       office: "(Representative Office)",
@@ -40,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       aboutTitle: "Quiénes somos",
       aboutText: "Estamos especializados en medición y optimización del consumo eléctrico.",
 
-      teamTitle: "Nuestro Equipo",     
+      teamTitle: "Nuestro Equipo",
 
       address: "Dirección",
       office: "(Oficina de Representación)",
@@ -50,13 +49,36 @@ document.addEventListener("DOMContentLoaded", () => {
       moreInfo: "Más información",
       allOK: "Aceptar todo",
       allNOK: "Rechazar todo"
+    },
+
+    pt: {
+      menuHome: "Início",
+      menuAbout: "Sobre nós",
+      menuContact: "Contato",
+
+      ourCompany: "🏢 Nossa Empresa",
+      widget: "Oferecemos um widget web que permite visualizar o consumo em tempo real.",
+
+      aboutTitle: "Quem somos",
+      aboutText: "Somos uma empresa especializada em medição e otimização do consumo de energia elétrica.",
+
+      teamTitle: "Nossa Equipe",
+
+      address: "Endereço",
+      office: "(Escritório de Representação)",
+      rights: "Todos os direitos reservados.",
+
+      msgLegal: "Este site usa cookies necessários e, com seu consentimento, cookies analíticos.",
+      moreInfo: "Ver detalhes",
+      allOK: "Aceitar tudo",
+      allNOK: "Recusar tudo"
     }
   };
 
   /* -------------------------
      LANGUAGE INIT
      ------------------------- */
-  const supported = ["en", "es"];
+  const supported = ["en", "es", "pt"];
 
   const browserLang = (navigator.language || "en").substring(0, 2);
   const stored = localStorage.getItem("dga-lang");
@@ -92,19 +114,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (val == null) return;
 
-      const tag = el.tagName.toLowerCase();
       const isHTML = /<[a-z][^>]*>/i.test(val);
 
       if (isHTML) {
         el.innerHTML = val;
-      } else if (tag === "a") {
-        el.textContent = val;
       } else {
         el.textContent = val;
       }
     });
 
-    /* FIXED BUG: was using currentLang (undefined) */
     setTimeout(() => {
       const el = document.querySelector("span[data-key='msgLegal']");
       if (el) el.textContent = translations[lang].msgLegal;
@@ -136,9 +154,6 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    /* -------------------------
-       OFFER BUTTON
-       ------------------------- */
     const offer = ev.target.closest(".offer-button");
     if (offer) {
       const targetId = "contact";
@@ -154,9 +169,6 @@ document.addEventListener("DOMContentLoaded", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
-    /* -------------------------
-       CAROUSEL CONTROLS
-       ------------------------- */
     const btn = ev.target.closest(".carousel .prev, .carousel .next");
     if (!btn) return;
 
@@ -216,5 +228,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  if (DEBUG) console.log("Script loaded (simplified)");
+  if (DEBUG) console.log("Script loaded (i18n updated)");
 });
