@@ -17,15 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       aboutTitle: "Who We Are",
       aboutText: "We are a company specialized in measuring and optimizing electrical energy consumption.",
 
-      teamTitle: "Our Team",
-
-      titleJohn: "John, CEO & Data Analyst (Dublin and Madrid)",
-      titleAdrien: "Adrien, AI Engineer & Energy Auditor (Geneva, Luxembourg and Madrid)",
-      titleDona: "Dona, Marketing Director (Geneva)",
-      titleDiana: "Diana, Marketing Assistant (Geneva)",
-      titleNidia: "Nidia, Marketing Assistant (Madrid)",
-      titlePaola: "Paola, Marketing Assistant (Madrid)",
-      titleAmelia: "Amelia, Marketing Assistant (Madrid)",
+      teamTitle: "Our Team",    
 
       address: "Address",
       office: "(Representative Office)",
@@ -48,15 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
       aboutTitle: "Quiénes somos",
       aboutText: "Estamos especializados en medición y optimización del consumo eléctrico.",
 
-      teamTitle: "Nuestro Equipo",
-
-      titleJohn: "John, Director Ejecutivo & Analista de Datos (Dublín y Madrid)",
-      titleAdrien: "Adrien, Ingeniero en IA y Auditor energético (Ginebra, Luxemburgo y Madrid)",
-      titleDona: "Dona, Directora de marketing (Ginebra)",
-      titleDiana: "Diana, Asistente de marketing (Ginebra)",
-      titleNidia: "Nidia, Asistente de marketing (Madrid)",
-      titlePaola: "Paola, Asistente de marketing (Madrid)",
-      titleAmelia: "Amelia, Asistente de marketing (Madrid)",
+      teamTitle: "Nuestro Equipo",     
 
       address: "Dirección",
       office: "(Oficina de Representación)",
